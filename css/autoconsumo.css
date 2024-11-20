@@ -1,0 +1,1426 @@
+/* Pre-header Styles */
+.pre-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.5rem 4rem;
+  width: 80%;
+  box-sizing: border-box;
+  margin-left: 10rem;
+  margin-right: 20rem;
+}
+
+.pre-header-flex {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.buscar {
+  width: 20px !important;
+  height: 20px !important;
+  position: absolute;
+  left: 15px;
+  /* Position the icon inside the input */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pre-header p {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.search-container {
+  position: relative;
+}
+
+.pre-header input[type="text"] {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  padding-left: 40px;
+  /* Add padding to the left for the icon */
+  cursor: text;
+  font-family: 'Outfit', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pre-header input[type="text"]::placeholder {
+  color: #999;
+}
+
+.pre-header input[type="text"]:hover {
+  background-color: #e0e0e0;
+}
+
+/* Ensure pre-header image is aligned properly */
+.pre-header img {
+  height: auto;
+  width: auto;
+}
+
+
+/* Global Styles */
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header Styles with Background Image */
+.header-with-bg {
+  background-image: url('imagenes/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.header-container {
+  width: 81%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo img {
+  width: 12rem;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+}
+
+nav ul li a:hover {
+  font-weight: 600;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('../img/agendaCab.jpg');
+  background-size: cover;
+  /* Cambia 'contain' a 'cover' para asegurarte de que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Asegura que la imagen no se repita */
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 16rem;
+  margin-bottom: 6rem;
+
+}
+
+.hero h1 {
+
+  font-size: 4rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 0;
+
+}
+
+.hero p {
+  font-size: 1.2rem;
+  /* Ajusta el tamaño de la fuente según sea necesario */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Añade sombra al texto para mejor legibilidad */
+  text-align: center;
+}
+
+/* Centered Text Section Styles */
+.centered-text {
+
+  padding: 3rem;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.centered-text p {
+
+  font-size: 1.7rem;
+  color: #333;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 60rem;
+}
+
+.centered-text p span {
+  color: #66c1c0;
+}
+
+.two-column-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Aligns content to the top */
+  margin: 4rem auto;
+  max-width: 86%;
+  gap: 6rem;
+  /* Space between columns */
+  margin-top: 0;
+}
+
+.photo-column {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  /* Aligns the image to the top */
+}
+
+
+.photo-column img {
+  width: 120%;
+  border-radius: 10px;
+  max-width: 50rem;
+  height: auto;
+  padding-top: 2rem;
+  margin: 0;
+  margin-right: 24rem;
+}
+
+.sierraimg {
+  width: 120%;
+  border-radius: 10px;
+  max-width: 50rem;
+  height: auto;
+
+  margin: 0;
+  margin-right: 24rem;
+}
+
+.column {
+  flex: 1;
+}
+
+.photo-column img {
+  width: 100%;
+  border-radius: 1rem;
+  /* Adjust radius for rounding effect */
+  max-width: 40rem;
+  /* Adjust as needed */
+  height: auto;
+}
+
+.text-column p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.text-column span.lifeip {
+  color: #63865d;
+  vertical-align: top;
+}
+
+.text-column span.lifeipblack {
+  font-weight: 600;
+}
+
+.two-column-section-wrapper {
+  padding: 6rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 80%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.lifeipcab {
+  text-align: left;
+  font-size: 2rem;
+  margin-left: 6rem;
+}
+
+.icono {
+  margin-left: 6rem;
+}
+
+.text-column h2 {
+  margin-top: 6rem;
+  text-align: left;
+  color: #ba2732;
+}
+
+.text-column hr {
+  border: none;
+  /* Remove default border */
+  border-top: 0.2rem solid #ba2732;
+  /* Add a solid border with the desired color */
+}
+
+.text-column button {
+  margin-top: 2rem;
+  align-items: start;
+  background-color: #ba2732;
+  /* Background color */
+  color: white;
+  /* Text color */
+  border-radius: 5rem;
+  /* Rounded corners */
+  padding: 1rem 2.5rem;
+  /* Add padding (rellenado) */
+  border: none;
+  /* Remove border */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  font-weight: 600;
+  /* Make text bold */
+}
+
+.text-column button:hover {
+  background-color: #a02028;
+  /* Darker shade on hover (optional) */
+}
+
+
+.text-column {
+  text-align: left;
+}
+
+
+
+.back-black-two-column-section-wrapper {
+  background-color: #4a4e49;
+
+}
+
+
+.black-two-column-section-wrapper {
+
+  padding: 6rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 80%;
+  padding-bottom: 0;
+}
+
+
+.icono2 {
+  margin-left: 6.5rem;
+  border-radius: 4rem;
+}
+
+
+.black-two-column-section-wrapper h3 {
+  color: white;
+  font-size: 2rem;
+  margin-left: 6rem;
+}
+
+
+.black-text-column {
+  padding-left: 6.5rem;
+}
+
+.black-text-column p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+.black-text-column p span {
+  font-weight: 900;
+}
+
+
+
+
+
+
+.black-photo-column img {
+  width: 100%;
+  border-radius: 12rem;
+  max-width: 50rem;
+  height: auto;
+
+  margin: 0;
+  margin-right: 24rem;
+
+}
+
+
+
+
+.black-text-column h3 {
+  margin-left: 0;
+}
+
+
+.black-two-column-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Aligns content to the top */
+
+  margin-top: 1rem;
+  max-width: 86%;
+  gap: 6rem;
+  /* Space between columns */
+}
+
+
+.estructuracion {
+  text-align: center;
+  /* Center-aligns text inside this section */
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.estructuracion h3 {
+  margin: 0 auto;
+  /* Centers the <h3> element horizontally */
+  color: #ffffff;
+  /* Apply your desired text color */
+  margin-bottom: 1rem;
+
+}
+
+
+.estructuracion p {
+  margin: 0 auto;
+  /* Centers the <h3> element horizontally */
+  color: #ffffff;
+  /* Apply your desired text color */
+  margin-bottom: 2rem;
+}
+
+.estructuracion button {
+  margin-top: 2rem;
+  align-items: start;
+  background-color: #ba2732;
+  /* Background color */
+  color: white;
+  /* Text color */
+  border-radius: 5rem;
+  /* Rounded corners */
+  padding: 1rem 2.5rem;
+  /* Add padding (rellenado) */
+  border: none;
+  /* Remove border */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  font-weight: 600;
+  /* Make text bold */
+  margin-bottom: 4rem;
+}
+
+
+.estructuracion button:hover {
+  background-color: #a02028;
+  /* Darker shade on hover (optional) */
+}
+
+
+
+
+.estructuracion hr {
+  border: none;
+  /* Remove default border */
+  border-top: 0.2rem solid #ffffff;
+  /* Add a solid border with the desired color */
+  width: 68%;
+}
+
+
+/* Four Column Section Styles */
+.four-column-section-wrapper {
+  padding: 4rem 18rem;
+  /* Light background color for contrast */
+}
+
+.four-column-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* Space between columns */
+  justify-content: center;
+  /* Center columns */
+}
+
+.four-column-item {
+  flex: 1;
+  max-width: calc(25% - 2rem);
+  /* Adjust width of columns */
+
+  /* Background color for visibility */
+  border-radius: 1rem;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Subtle shadow */
+  text-align: center;
+  /* Center text */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* Arrange items vertically */
+  justify-content: center;
+}
+
+.four-column-item img {
+  width: 20%;
+  /* Adjust this value to make SVG images larger or smaller */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  /* Center the image horizontally */
+}
+
+.four-column-item p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.herramientasSeguimiento {
+  margin: 12rem auto;
+  /* Centra el contenedor verticalmente y añade margen superior e inferior */
+  text-align: center;
+  /* Centra el texto dentro del contenedor */
+  max-width: 80%;
+  /* Limita el ancho del contenedor para que el texto no se estire demasiado */
+}
+
+.herramientasSeguimiento p {
+  margin: 0 auto;
+  /* Centra el párrafo dentro del contenedor */
+  max-width: 70%;
+  /* Opcional: Limita el ancho del párrafo para mejorar la legibilidad */
+}
+
+.herramientasSeguimiento h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+
+/* Four Column Section Styles */
+.herramientas-four-column-section-wrapper {
+  padding: 4rem 18rem;
+  /* Light background color for contrast */
+}
+
+.herramientas-four-column-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* Space between columns */
+  justify-content: center;
+  /* Center columns */
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.herramientas-four-column-item {
+  flex: 1;
+  max-width: calc(25% - 2rem);
+  /* Adjust width of columns */
+  border-radius: 1rem;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Subtle shadow */
+  text-align: center;
+  /* Center text */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* Arrange items vertically */
+  justify-content: center;
+  border: 0px solid #ccc;
+  /* Add a border with color #ccc */
+  box-shadow: 0 4px 8px rgba(32, 32, 32, 0.4);
+  /* Add a shadow with slight offset and blur */
+  padding: 4rem 0rem 4rem 0rem;
+}
+
+.herramientas-four-column-item img {
+  width: 20%;
+  /* Adjust this value to make SVG images larger or smaller */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  /* Center the image horizontally */
+}
+
+.herramientas-four-column-item p {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+}
+
+.herramientas-four-column-item p span {
+  color: #98b493;
+}
+
+
+.negrita {
+  font-weight: 800;
+}
+
+
+.rosa {
+  color: #ba2732 !important;
+  font-weight: 800;
+  font-size: 1.2rem !important;
+
+}
+
+
+.azul {
+  color: #2adad8 !important;
+  font-weight: 800;
+  font-size: 1.2rem !important;
+
+}
+
+.verde {
+  color: #98b493 !important;
+}
+
+
+
+.grafica-section-wrapper {
+  padding: 6rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 68%;
+  padding-top: 0;
+}
+
+.grafica-section-wrapper div {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.listado-section-wrapper {
+  padding: 6rem;
+  text-align: left;
+  margin: 2rem auto;
+  max-width: 68%;
+  padding-top: 0;
+}
+
+.tablaCincoXtres {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  /* 3 rows of equal height */
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 columns of equal width */
+  gap: 0;
+  /* Remove default gap */
+}
+
+/* Style the cells */
+.tablaCincoXtres>div {
+  border-left: 1px solid #ccc;
+  /* Border on the left side of each cell */
+
+  /* Background color for visibility */
+  display: flex;
+  /* Center content inside each grid item */
+  align-items: start;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 2rem 0rem 2rem 2rem;
+  margin-bottom: 3rem;
+}
+
+
+
+.tablaCincoXtres>div:nth-child(5n) {
+  border-right: 1px solid #ccc;
+  /* Add right border to the last cell in each row */
+}
+
+.tablaCincoXtres p {
+  margin: 0;
+}
+
+.tablaCincoXtres button {
+  margin-top: 1rem;
+  color: #ba2732;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.tablaCincoXtres button:hover {
+  color: #a22a2f;
+}
+
+
+
+
+.botonSVG {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 600;
+}
+
+.botonSVG img {
+  width: 25%;
+}
+
+
+/* Hero Section Styles */
+.consulta {
+  background-image: url('../imagenes/consulta.jpg');
+  background-size: cover;
+  /* Cambia 'contain' a 'cover' para asegurarte de que la imagen cubra todo el área */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Asegura que la imagen no se repita */
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+
+.consulta h3 {
+
+  font-size: 2rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.consulta p {
+
+  /* Ajusta el tamaño de la fuente según sea necesario */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Añade sombra al texto para mejor legibilidad */
+  text-align: center;
+}
+
+
+.consulta button {
+  margin-top: 2rem;
+  align-items: start;
+  background-color: #ba2732;
+  /* Background color */
+  color: white;
+  /* Text color */
+  border-radius: 5rem;
+  /* Rounded corners */
+  padding: 1rem 2.5rem;
+  /* Add padding (rellenado) */
+  border: none;
+  /* Remove border */
+  cursor: pointer;
+  /* Add a pointer on hover */
+  font-weight: 600;
+  /* Make text bold */
+}
+
+
+
+.consulta button:hover {
+  background-color: #a02028;
+}
+
+/* Four Column Section Styles */
+.six-column-section-wrapper {
+  padding: 2rem 1rem;
+
+}
+
+.six-column-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* Espacio entre columnas */
+  justify-content: center;
+  /* Centrar columnas */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.six-column-item {
+  flex: 1;
+  max-width: calc(33.333% - 2rem);
+  /* Ajustar el ancho para 3 elementos por fila */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Distribuir el espacio uniformemente */
+  align-items: center;
+  /* Centrar elementos horizontalmente */
+  padding: 1rem;
+  /* Agregar padding alrededor del contenido */
+
+
+  /* Sombra sutil */
+  background-color: #fff;
+  /* Color de fondo para los elementos */
+  box-sizing: border-box;
+  /* Incluir padding y borde en el cálculo del ancho y alto del elemento */
+  min-height: 200px;
+  /* Establecer una altura mínima para garantizar la alineación */
+}
+
+.six-column-item img {
+  width: 70%;
+  /* Hacer que la imagen ocupe todo el ancho de su contenedor */
+  height: auto;
+  /* Mantener la relación de aspecto */
+  object-fit: cover;
+  /* Asegurar que las imágenes cubran el contenedor sin distorsionar la relación de aspecto */
+  display: block;
+  margin-bottom: 0.5rem;
+  /* Espacio entre la imagen y el texto */
+}
+
+.six-column-item p {
+  font-size: 0.9rem;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+  /* Centrar el texto horizontalmente */
+  line-height: 1.4;
+  /* Asegurar una altura de línea consistente */
+}
+
+/* Estilos adicionales para asegurar alineación vertical consistente */
+.six-column-item .rosa {
+  font-weight: bold;
+  color: #ff69b4;
+  /* Ejemplo de color rosa para la clase 'rosa' */
+  margin-bottom: 0.5rem;
+  /* Espacio entre el texto rosa y el párrafo siguiente */
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  /* Centering the footer-wrapper horizontally */
+  padding: 20px 0;
+  /* Optional: Add some vertical padding if needed */
+  background-color: #2f4242;
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  /* Third column is twice as wide as the first two */
+  gap: 2px;
+  background-color: #2f4242;
+  width: 72%;
+}
+
+.footer-item {
+  background-color: #2f4242;
+
+  /* Color de fondo de cada columna */
+
+  /* Borde entre columnas */
+  padding: 18px;
+  text-align: start;
+
+  color: white;
+}
+
+.footer-item-flex {
+  display: flex;
+
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  justify-content: space-between;
+
+}
+
+
+
+.footer-item-flex-botonSVG {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 600;
+  width: 20%;
+  background-color: #2f4242;
+  border: 0px;
+  color: #2adad8;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.footer-item-flex-botonSVG img {
+  width: 40%;
+}
+
+
+.footer-item hr {
+  border: none;
+  /* Remove default border */
+  border-top: 0.1rem solid #ffffff;
+  /* Add a solid border with the desired color */
+}
+
+.footer-item-flex p {
+  font-size: 1rem !important;
+  margin: 0;
+}
+
+.gris {
+  border-top: 0.1rem solid #979797 !important;
+}
+
+.border-left-right {
+  border-left: 0.1rem solid #979797;
+  /* Left border */
+  border-right: 0.1rem solid #979797;
+  /* Right border */
+}
+
+.footer-item-list {
+  display: flex !important;
+  gap: 2rem !important;
+  flex-direction: column;
+}
+
+.footer-item-list p {
+  color: white;
+}
+
+.contacto {
+  margin-top: 4rem;
+}
+
+.contacto p {
+  margin: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1rem !important;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  gap: 8rem;
+}
+
+.logos img {
+  width: 70%;
+  max-width: 100%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20rem;
+  margin-right: 20rem;
+
+
+}
+
+.copyright p {
+  margin-top: 0;
+  color: #666;
+}
+
+
+
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+
+  .logos {
+    flex-direction: column !important;
+  }
+
+
+  .buttongob {
+    padding: 10px 20px !important;
+  }
+
+  .para {
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    padding-bottom: 4rem !important;
+  }
+
+  .iframe {
+    margin: 0 !important;
+  }
+
+
+  /* Adjust header styles */
+  .header-with-bg {
+    padding: 1rem;
+  }
+
+  .header-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 8rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* Adjust hero section styles */
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Adjust two-column section styles */
+  .two-column-section {
+    flex-direction: column;
+  }
+
+  .photo-column {
+    margin-bottom: 2rem;
+  }
+
+  .photo-column img {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  /* Adjust other sections and elements as needed */
+  .centered-text p {
+    font-size: 1.4rem;
+    width: 90%;
+  }
+
+  .four-column-section {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .four-column-item {
+    max-width: calc(50% - 1rem);
+  }
+
+  .pre-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.5rem 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .black-photo-column img {
+    width: 40%;
+    border-radius: 12rem;
+    max-width: 50rem;
+    height: auto;
+
+    margin: 0;
+    margin-right: 24rem;
+
+  }
+
+  .tablaCincoXtres {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    /* 3 rows of equal height */
+    grid-template-columns: repeat(2, 1fr);
+    /* 5 columns of equal width */
+    gap: 0;
+    /* Remove default gap */
+  }
+
+  .listado-section-wrapper {
+    padding: 0;
+    text-align: left;
+    margin: 2rem auto;
+    max-width: 68%;
+    padding-top: 0;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    /* Centering the footer-wrapper horizontally */
+    padding: 20px 0;
+    /* Optional: Add some vertical padding if needed */
+    background-color: #2f4242;
+    flex-direction: column;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+
+
+    gap: 2px;
+    background-color: #2f4242;
+    width: 72%;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+
+
+  }
+
+
+
+  /* Global Styles */
+  body {
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .black-photo-column img {
+    width: 40%;
+    border-radius: 12rem;
+    max-width: 50rem;
+    height: auto;
+
+    margin: 0;
+    margin-right: 0;
+
+  }
+
+
+  .pre-header-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+
+  .two-column-section-wrapper {
+    padding: 2rem;
+    text-align: left;
+    margin: 2rem auto;
+    max-width: 80%;
+    padding-top: 0;
+  }
+
+
+  .lifeipcab {
+    text-align: left;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+  .icono {
+    margin-left: 2rem;
+  }
+
+  .icono2 {
+    margin-left: 0rem;
+    border-radius: 4rem;
+  }
+
+
+
+  .black-two-column-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Aligns content to the top */
+
+    margin-top: 1rem;
+    max-width: 100%;
+
+    /* Space between columns */
+  }
+
+  .black-text-column {
+    padding-left: 2rem;
+  }
+
+  .black-two-column-section-wrapper {
+
+    padding: 6rem;
+    text-align: left;
+    margin: 0rem auto;
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+
+  .logo img {
+    width: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .four-column-section-wrapper {
+    padding: 2rem 2rem;
+    /* Adjust padding for even smaller screens */
+  }
+
+  .four-column-item {
+    max-width: 100%;
+    /* Single column on very small screens */
+  }
+
+  .four-column-item img {
+    width: 30%;
+    /* Increase image size for smaller screens */
+  }
+
+  .four-column-section-wrapper {
+    padding: 2rem;
+    /* Adjust padding for smaller screens */
+  }
+
+  .four-column-item {
+    flex: 1 1 100%;
+    /* Single column on very small screens */
+  }
+
+  .four-column-item img {
+    width: 30%;
+    /* Increase image size for smaller screens */
+  }
+
+  .herramientas-four-column-section {
+    flex-direction: column;
+    /* Stack items vertically */
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .herramientas-four-column-item {
+    max-width: 100%;
+    /* Full width for each item on mobile */
+  }
+
+  .herramientas-four-column-item img {
+    width: 50%;
+    /* Adjust image size for mobile */
+  }
+
+  /* Four Column Section Styles */
+  .herramientas-four-column-section-wrapper {
+    padding: 0;
+    /* Light background color for contrast */
+  }
+
+  .six-column-item {
+    max-width: 100%;
+    /* Ajustar el ancho a 100% para dispositivos móviles */
+    flex-basis: 100%;
+    /* Permitir que los elementos ocupen toda la fila */
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .logos img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Tablet Devices (between 768px and 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  /* Adjust header styles */
+  .header-with-bg {
+    padding: 2rem;
+  }
+
+  .header-container {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo img {
+    width: 10rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin-right: 2rem;
+  }
+
+  /* Adjust hero section styles */
+  .hero {
+    height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust two-column section styles */
+  .two-column-section {
+    flex-direction: row;
+  }
+
+  .photo-column {
+    margin-bottom: 0;
+  }
+
+  .photo-column img {
+    width: 100%;
+    max-width: 40rem;
+    margin-right: 2rem;
+  }
+
+  /* Adjust other sections and elements as needed */
+  .centered-text p {
+    font-size: 1.6rem;
+    width: 80%;
+  }
+
+  .four-column-item {
+    flex: 1 1 calc(50% - 2rem);
+    /* Two columns on smaller screens */
+  }
+
+
+}
+
+/* Additional Adjustments for Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Ensure images do not overflow the viewport */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.centrado {
+  max-width: none;
+  /* Override max-width */
+  display: inline-block;
+  /* Or any other display property you need */
+  height: auto;
+  /* Maintain aspect ratio if needed */
+}
+
+
+/* Dropdown Button */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
